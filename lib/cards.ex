@@ -1,7 +1,7 @@
 defmodule Cards do
 
   @moduledoc """
-    Provides methods for creating and handling nigger card decks
+    Provides methods for creating and handling card decks
   """
   def create_deck do
    values = ["Ace", "Two", "Three", "Four", "Five"]
@@ -32,7 +32,7 @@ defmodule Cards do
   def load(filename) do
       case File.read(filename) do
         {:ok, binary} -> :erlang.binary_to_term(binary)
-        {:error, _reason} -> "That file does not exist nigger"
+        {:error, _reason} -> "That file does not exist"
       end
   end
   
